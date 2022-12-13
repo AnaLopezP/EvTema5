@@ -38,11 +38,3 @@ def division(num1, num2):
         div = num1/num2
     return div
 
-a = suma(1, 2)
-print('Suma: ', a)
-
-b = resta(2, 'bb')
-print('Resta: ', b)
-
-d = division(3, 0)
-print(d)
