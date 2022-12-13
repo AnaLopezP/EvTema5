@@ -6,7 +6,7 @@ def suma(num1, num2):
         num1 = int(input('Primer numero: '))
         num2 = int(input('Segundo número: '))
         sum = num1 + num2
-    return num1, num2, sum
+    return str(num1) + "+" + str(num2) + "=" + str(sum)
 
 def resta(num1, num2):
     try:
@@ -16,7 +16,7 @@ def resta(num1, num2):
         num1 = int(input('Primer numero: '))
         num2 = int(input('Segundo número: '))
         res = num1 - num2
-    return num1, num2, res
+    return str(num1) + "-" + str(num2) + "=" + str(res)
 
 def producto(num1, num2):
     try:
@@ -26,7 +26,7 @@ def producto(num1, num2):
         num1 = int(input('Primer numero: '))
         num2 = int(input('Segundo número: '))
         prod = num1*num2
-    return num1, num2, prod
+    return str(num1) + "*" + str(num2) + "=" + str(prod)
 
 def division(num1, num2):
     try:
@@ -36,5 +36,4 @@ def division(num1, num2):
         num1 = int(input('Primer numero: '))
         num2 = int(input('Segundo número: '))
         div = num1/num2
-    return num1, num2, div
-
+    return str(num1) + "/" + str(num2) + "=" + str(div)
