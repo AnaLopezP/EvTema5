@@ -34,7 +34,10 @@ class Personaje():
         return "VIDA: " +  str(self.vida) + "\n" + "ATAQUE: " +  str(self.ataq) + "\n" + "DEFENSA: " +  str(self.defen) + "\n" + "ALCANCE: " +  str(self.alcance) + "\n"
 
 class Gestor():
-    pass
+    def __init__(self, personaje):
+        self.personaje = personaje
 
-pepe = Personaje(3, 4, -1, 7)
-print(pepe)
+p = Personaje(3, 4, -1, 7)
+fichero = open('personajes.pckl', 'wb')
+pepe = Gestor(p)
+print(pepe.personaje)
