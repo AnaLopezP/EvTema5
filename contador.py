@@ -33,8 +33,9 @@ def sumres(inc, dec):
         con2.close()
         leerfich()
     if dec == False and inc == False:
+        con = open('contador.txt', 'r')
         print(con.read())
 
 
-leerfich()
-sumres(True, False)
+
+sumres(False, True)
