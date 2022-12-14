@@ -37,7 +37,21 @@ class Gestor():
     def __init__(self, personaje):
         self.personaje = personaje
 
-p = Personaje(3, 4, -1, 7)
+    def añadir(self, fichero):
+        dump(self.personaje, fichero)
+        fichero.close()
+
+    def eliminar(self):
+        pass
+
+    def mostrar(self):
+        pass
+
+    
+
+p = Personaje(3, 4, 61, 7)
 fichero = open('personajes.pckl', 'wb')
 pepe = Gestor(p)
 print(pepe.personaje)
+pepe.añadir(fichero)
+load(fichero)
