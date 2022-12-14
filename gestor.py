@@ -6,14 +6,28 @@ class Personaje():
         self.ataq = ataq
         self.defen = defen
         self.alcance = alcance
-        #poner las condiciones con la funcion comprobar
+        if Personaje.comprobar(self, vida) == False:
+            print('Vuelva a introducir la vida:')
+            self.vida = int(input())
+
+        if Personaje.comprobar(self, ataq) == False:
+            print('Vuelva a introducir el ataque:')
+            self.ataq = int(input())
+
+        if Personaje.comprobar(self, defen) == False:
+            print('Vuelva a introducir la defensa:')
+            self.defen = int(input())
+
+        if Personaje.comprobar(self, alcance) == False:
+            print('Vuelva a introducir el alcance:')
+            self.alcance = int(input())
+        else:
+            print('Tu personaje se ha creado correctamente')
 
     def comprobar(self, valor):
         if valor > 0:
-            print('Tu personaje se ha creado correctamente')
             return True
         else: 
-            print('Las características del personaje tienen que ser mayores que 0. Vuelva a introducir los datos.')
             return False
 
     def __str__(self):
@@ -22,5 +36,5 @@ class Personaje():
 class Gestor():
     pass
 
-pepe = Personaje(3, 4, 5, 7)
+pepe = Personaje(3, 4, -1, 7)
 print(pepe)
