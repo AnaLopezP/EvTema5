@@ -6,3 +6,7 @@ def hora():
     system('cls')
     return tiempo
 
+print(hora())
+while True:
+    print(hora())
+    sleep(1)
