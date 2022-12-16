@@ -38,10 +38,13 @@ class Gestor():
     def __init__(self):
         self.personaje = []
 
-    def añadir(self):
-        pass
+    def añadir(self, dato):
+        self.personaje.append(dato)
+        fichero = open('personajes.pckl', 'wb')
+        dump(dato, fichero)
+        fichero.close()
+    
     def leer(self):
         pass
     def borrar(self):
         pass
-    
