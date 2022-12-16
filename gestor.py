@@ -49,4 +49,9 @@ class Gestor():
             print(i.nombre)
     
     def borrar(self):
-        pass
+        p = input('Nombre del personaje a eliminar: ')
+        for i in self.personaje:
+            if i.nombre == p:
+                self.personaje.remove(i)
+        fichero = open('personajes.pckl', 'wb')
+        dump(self.personaje, fichero)
