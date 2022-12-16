@@ -45,6 +45,8 @@ class Gestor():
         fichero.close()
     
     def leer(self):
-        pass
+        for i in self.personaje:
+            print(i.nombre)
+    
     def borrar(self):
         pass
