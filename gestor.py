@@ -35,6 +35,13 @@ class Personaje():
         return "NOMBRE: " +  str(self.nombre) + "\n" + "VIDA: " +  str(self.vida) + "\n" + "ATAQUE: " +  str(self.ataq) + "\n" + "DEFENSA: " +  str(self.defen) + "\n" + "ALCANCE: " +  str(self.alcance) + "\n"
 
 class Gestor():
- 
-        
+    def __init__(self):
+        self.personaje = []
 
+    def añadir(self):
+        pass
+    def leer(self):
+        pass
+    def borrar(self):
+        pass
+    
